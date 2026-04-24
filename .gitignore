@@ -35,3 +35,45 @@ auth-service/build/
 
 ### VS Code ###
 .vscode/
+.idea
+auth-service/src/main/resources/application.properties
+### ### ### ### ### ### ### ### ### ###
+
+#Api-Gateway
+api-gateway/HELP.md
+api-gateway/target/
+api-gateway/.mvn/wrapper/maven-wrapper.jar
+!api-gateway/**/src/main/**/target/
+!api-gateway/**/src/test/**/target/
+
+### STS ###
+api-gateway/.apt_generated
+api-gateway/.classpath
+api-gateway/.factorypath
+api-gateway/.project
+api-gateway/.settings
+api-gateway/.springBeans
+api-gateway/.sts4-cache
+
+### IntelliJ IDEA ###
+api-gateway/.idea
+api-gateway/*.iws
+api-gateway/*.iml
+api-gateway/*.ipr
+
+### NetBeans ###
+api-gateway/nbproject/private/
+api-gateway/nbbuild/
+api-gateway/dist/
+api-gateway/nbdist/
+api-gateway/.nb-gradle/
+api-gatewaybuild/
+!api-gateway/**/src/main/**/build/
+!api-gateway/**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+api-gateway/src/main/resources/application.properties
+
+

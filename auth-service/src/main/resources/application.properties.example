@@ -1,11 +1,11 @@
 spring.application.name=auth-service
 
-server.port=8080
+server.port=8081
 
 # Database Configuration
 spring.datasource.url=jdbc:postgresql://localhost:5432/authdb
 spring.datasource.username=postgres
-spring.datasource.password=0000
+spring.datasource.password=xxxx
 spring.datasource.driver-class-name=org.postgresql.Driver
 
 # JPA Configuration
@@ -15,7 +15,7 @@ spring.jpa.properties.hibernate.format_sql=true
 
 # JWT Configuration
 # Base64 encoded secret (minimum 32 bytes / 256 bits for HS256)
-jwt.secret=c2VjdXJlLXNlY3JldC1rZXktZm9yLWp3dC10b2tlbi1nZW5lcmF0aW9uLW1pbi0zMi1jaGFycw==
+jwt.secret=password
 jwt.expiration=86400000
 
 # Redis Configuration
