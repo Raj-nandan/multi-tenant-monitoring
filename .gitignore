@@ -1,80 +1,43 @@
-# Auth Service (Maven/Java)
-auth-service/HELP.md
-auth-service/target/
-auth-service/.mvn/wrapper/maven-wrapper.jar
-!auth-service/**/src/main/**/target/
-!auth-service/**/src/test/**/target/
+# === Monorepo .gitignore for multi-tenant-monitoring ===
+# All services share these patterns. Per-service .gitignore files
+# are for local IDE convenience only and are not committed.
 
-# Claude
+# Maven/Java build artifacts (all services)
+**/HELP.md
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE files (all services)
+**/.apt_generated/
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings/
+**/.springBeans/
+**/.sts4-cache/
+**/*.iws
+**/*.iml
+**/*.ipr
+**/.idea/
+
+# VS Code
+**/.vscode/
+
+# Editor/Tool
+**/nbproject/private/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
+**/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Environment configs (all services)
+**/src/main/resources/application.properties
+
+# Claude Code
 .claude/
 CLAUDE.md
-
-### STS ###
-auth-service/.apt_generated
-auth-service/.classpath
-auth-service/.factorypath
-auth-service/.project
-auth-service/.settings
-auth-service/.springBeans
-auth-service/.sts4-cache
-
-### IntelliJ IDEA ###
-auth-service/.idea
-auth-service/*.iws
-auth-service/*.iml
-auth-service/*.ipr
-
-### NetBeans ###
-auth-service/nbproject/private/
-auth-service/nbbuild/
-auth-service/dist/
-auth-service/nbdist/
-auth-service/.nb-gradle/
-auth-service/build/
-!auth-service/**/src/main/**/build/
-!auth-service/**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-.idea
-auth-service/src/main/resources/application.properties
-### ### ### ### ### ### ### ### ### ###
-
-#Api-Gateway
-api-gateway/HELP.md
-api-gateway/target/
-api-gateway/.mvn/wrapper/maven-wrapper.jar
-!api-gateway/**/src/main/**/target/
-!api-gateway/**/src/test/**/target/
-
-### STS ###
-api-gateway/.apt_generated
-api-gateway/.classpath
-api-gateway/.factorypath
-api-gateway/.project
-api-gateway/.settings
-api-gateway/.springBeans
-api-gateway/.sts4-cache
-
-### IntelliJ IDEA ###
-api-gateway/.idea
-api-gateway/*.iws
-api-gateway/*.iml
-api-gateway/*.ipr
-
-### NetBeans ###
-api-gateway/nbproject/private/
-api-gateway/nbbuild/
-api-gateway/dist/
-api-gateway/nbdist/
-api-gateway/.nb-gradle/
-api-gatewaybuild/
-!api-gateway/**/src/main/**/build/
-!api-gateway/**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-api-gateway/src/main/resources/application.properties
-
-
